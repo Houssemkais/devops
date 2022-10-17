@@ -4,7 +4,7 @@ pipeline {
         NEXUS_VERSION = "nexus3"
         NEXUS_PROTOCOL = "http"
         NEXUS_URL = "44.198.246.87:8081"
-        NEXUS_REPOSITORY = "kawther"
+        NEXUS_REPOSITORY = "maven-public"
         NEXUS_CREDENTIAL_ID = "nexus-credentials"
         }    
     stages {
