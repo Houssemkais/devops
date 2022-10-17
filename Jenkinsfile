@@ -6,7 +6,7 @@ pipeline {
             steps {
                 
                 //git 'https://github.com/mhassini/timesheet-devops.git'
-                git 'https://github.com/Zeroxcharisma/CI-CD.git'
+                git 'https://github.com/kaoutherchalbi/devops.git'
             }
         }
         stage ('Maven Clean') {
