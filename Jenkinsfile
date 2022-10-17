@@ -23,11 +23,13 @@ pipeline {
         }
 
         
-        stage ('Sonar') {
+     stage ('Scan and Build Jar File') {
             steps {
-               
- sh 'mvn sonar:sonar -Dsonar.projectKey=keyspring -Dsonar.host.url=http://44.198.246.87:9000  -Dsonar.login=64ca48605093d2e1b3ca9abcca1a57ec6816ec28'
+               withSonarQubeEnv(installationName: 'SonarQube Scanner', credentialsId: 'sonqubeforgeneration') {
+                sh 'mvn clean package sonar:sonar'
+                }
             }
+        }
           
         }
 
