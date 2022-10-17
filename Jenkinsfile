@@ -1,12 +1,15 @@
+
+
 pipeline {
     agent any 
-        environment {
+ environment {
         NEXUS_VERSION = "nexus3"
         NEXUS_PROTOCOL = "http"
         NEXUS_URL = "44.198.246.87:8081"
         NEXUS_REPOSITORY = "nexus3"
         NEXUS_CREDENTIAL_ID = "nexus-credentials"
         }
+       
     stages {
         stage ('Git') {
             steps {
@@ -51,9 +54,5 @@ pipeline {
         }
     }
 
-}
-}
-}
 
-    
 
