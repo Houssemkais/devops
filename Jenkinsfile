@@ -11,7 +11,7 @@ pipeline {
         stage ('Git') {
             steps {
                 
-                //git 'https://github.com/mhassini/timesheet-devops.git'
+               
                 git 'https://github.com/kaoutherchalbi/devops.git'
             }
         }
@@ -46,18 +46,7 @@ pipeline {
         }
         
         
-        
-        
-        stage('email'){
- 
- steps {
-
- mail bcc: '', body: '''Hello from kaouther,
- Devops Pipeline with success.
-
- Cordialement''', cc: '', from: '', replyTo: '', subject: 'Devops Timesheet', to: 'kaouther.chalbi@esprit.tn'
-    
- }}
+  
         
         
         
