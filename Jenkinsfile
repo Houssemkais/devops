@@ -44,6 +44,24 @@ pipeline {
                 echo 'hello world'
             }
         }
+        
+        
+        
+        
+        stage('email'){
+ 
+ steps {
+
+ mail bcc: '', body: '''Hello from kaouther,
+ Devops Pipeline with success.
+
+ Cordialement''', cc: '', from: '', replyTo: '', subject: 'Devops Timesheet', to: 'kaouther.chalbi@esprit.tn'
+    
+ }}
+        
+        
+        
+        
         stage("Publish to Nexus Repository Manager") {
             steps {
                 script {
