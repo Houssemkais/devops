@@ -17,13 +17,13 @@ pipeline {
         }
         stage ('Maven Clean') {
             steps {
-//                sh 'cd achat'
-                sh 'mvn clean'
+
+                sh 'mvn clean compile'
             }
         }
         stage ('Maven Compile') {
             steps {
-//                sh "cd achat"
+
                 sh "mvn compile"
             }
         }
