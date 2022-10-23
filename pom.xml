@@ -46,9 +46,7 @@
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-boot-starter</artifactId>
-			<version>3.0.0</version>
-		</dependency>
-		<dependency>
+		<version>3.0.0</version>		</dependency>		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>3.0.0</version>
@@ -81,7 +79,7 @@
 		<repository>
 			<id>deploymentRepo</id>
 			<name>Nexus Repository</name>
-			<url>http://44.198.246.87:8081/repository/maven-snapshots/</url>
+			<url>http://192.168.1.36:8081/repository/maven-snapshots/</url>
 		</repository>
 	</distributionManagement>
 
